@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    font-size: 15pt;
+    background-color: rgba(10,10,10,1);
+    height:1000px;
+    overflow-x: hidden;
+}
+#PC {
+  opacity: 0;
+  margin-top: -230px;
+  
+}
+@media only screen and (min-width:768px) {
+  #bodyDiv {
+    opacity: 0;
+    pointer-events: none;
+  }
+  #PC {
+    opacity: 1;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 200px;
+    font-family: fantasy;
+  }
+}
+
+#sheep {
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 195px;
+  width: 200px;
+  opacity: 0.8;
+  
+}
+
+
+/*
+.Head {
+ margin-top: 10px;
+ border: 1px solid #1A1A1A;
+ height: 200px;
+ border-radius: 10px;
+ 
+}
+
+ 
+ #HeadH1 {
+   margin-left: 60px;
+   text-align: center;
+   color: whitesmoke;
+   font-size: 25px;
+   margin-top: 75px;
+   font-family: 'VT323', monospace;
+ }
+ */
+
+ 
+ 
+ .animations {
+   margin-top: 50px;
+   transform: translateY(54px);
+ 
+ }
+ 
+ #mario {
+   margin-left: -40px;
+   height: 50px;
+   width: 60px;
+   animation: marioA 15s;
+   animation-iteration-count: 15;
+ }
+ 
+ #luigi {
+   margin-left: -20px;
+   width: 45px;
+   height: 30px;
+   animation: luigiA 15s;
+   animation-iteration-count: 15;
+ }
+ /*desktop*/
+ 
+ @media only screen and (min-width: 768px) {
+   #mario {
+     animation: marioA 20s;
+     animation-iteration-count: 15;
+ }
+   #luigi {
+     animation: luigiA 20s;
+     animation-iteration-count: 15;
+ }
+ }
+ 
+ 
+ /*WAVES*/
+ .custom-shape-divider-top-1626204048 {
+    position: absolute;
+    top: 201px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+}
+
+.custom-shape-divider-top-1626204048 svg {
+  
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1626204048 .shape-fill {
+    fill: #370A5C;
+}
+
+
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1626204048 svg {
+        width: calc(177% + 1.3px);
+        height: 47px;
+    }
+}
+
+/**Gradient**/
+
+.gradientBG {
+  height: 100%;
+  
+  background: rgb(86,0,127);
+background: linear-gradient(0deg, rgba(95,0,140,0.3) , rgba(10,10,10,1) 100%);
+  
+
+}
+#SCP {
+  transform: translateY(50px);
+}
+
+.HR {
+  margin-top: 60px;
+  height: 2px;
+  background-color: rgba(198, 2, 255, 0.3);
+}
+
+/**Animations*/
+
+@keyframes luigiA {
+    0% {
+    transform: translateX(-130px);
+  }
+  
+    100% {
+  
+    transform: translateX(430px);
+  }
+  
+}
+
+@keyframes marioA {
+    0% {
+    transform: translateX(-150px);
+  }
+  
+  100% {
+    transform: translateX(430px);
+  }
+  
+}
+
+/*Desktop*/
+@media only screen and (min-width:768px) {
+  
+  @keyframes luigiA {
+    0% {
+    transform: translateX(-80px);
+  }
+  100% {
+  
+    transform: translateX(1100px);
+  }
+  
+}
+
+@keyframes marioA {
+  0% {
+    transform: translateX(-95px);
+  }
+  
+  100% {
+    transform: translateX(1100px);
+  }
+  
+}
+
+}
+
+
+/*Livros*/
+
+.divLivros {
+  text-align: center;
+  margin-top: 30px;
+  
+  
+}
+
+
+
+
+#Livros {
+  color: white;
+  font-family: fantasy;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 900px;
+  pointer-events: none;
+  backdrop-filter: blue(30px);
+}
+
+h1 {
+
+  font-size: 30px;
+  font-family: 'Uchen', serif;
+  line-height: 33px;
+}
+
+.Livro1 {
+  margin-top: 15px;
+  color: white;
+  /*border: 1px solid #19B28C;*/
+  border-radius: 8px;
+  border-top: 1px solid #4AB68E;
+  border-bottom: 1px solid #4AB68E;
+  border-right: 1px #4AB68E;
+  border-left: 1px #4AB68E;
+  background-color: #121212;
+  line-height: 2px;
+}
+
+.imgLivro {
+  width: 180px;
+  height: 230px;
+  margin-top: 10px;
+  border: 1px solid #5300A2;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0px 11px 15px 11px rgba(99, 0, 147, 0.2);
+}
+
+.titleLivro {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  
+}
+
+.titleLivro a {
+  text-decoration: none;
+  color: white;
+  pointer-events: all;
+}
+
+.textLivro {
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 20px;
+  margin: 10px;
+}
+
+
+#avisin {
+  transform: translateY(850px);
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Uchen', serif;
+}
+
+.footer {
+  margin-top: 1000px;
+  height: 80px;
+  background: #101010;
+}
+
+.textFoot {
+  margin-top: 35px;
+  color: white;
+  text-align: center;
+  font-size: 21px;
+  font-family: 'VT323', cursive;
+}
+
+/*
+@media only screen and (min-width:768px) {
+  .divLivros {
+  height: 100%;
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+  
+  #Livros {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  .Livro1 {
+    margin-top: 150px;
+    width: 100%;
+    transform: translateX(-300px);
+  }
+}
+*/
